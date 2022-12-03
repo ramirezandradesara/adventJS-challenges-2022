@@ -2,9 +2,9 @@ const gifts = ['cat', 'game', 'socks']
 
 function wrapping(gifts) {
 
-    let envolturaIzq = ''
-    let envolturaDer = ''
-    let regalosEnvueltos = []
+    let envolturaIzq: string = ''
+    let envolturaDer: string = ''
+    let regalosEnvueltos: string[] = []
 
     gifts.map(gift => {
         envolturaIzq = `${'*'.repeat(gift.length + 2)}\n*`
@@ -15,4 +15,4 @@ function wrapping(gifts) {
     return regalosEnvueltos
 };
 
-// console.log(wrapping(gifts)); 
+wrapping(gifts);
